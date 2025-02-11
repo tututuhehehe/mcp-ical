@@ -20,8 +20,7 @@ Claude: "Let me check that for you..."
 [Displays a clean overview of your upcoming week]
 
 You: "Add a lunch meeting with Sarah tomorrow at noon"
-Claude: "✨ Created: Lunch with Sarah
-       📅 Tomorrow, 12:00 PM"
+Claude: "✨ 📅 Created: Lunch with SarahTomorrow, 12:00 PM"
 ```
 
 ## ✨ Features
@@ -42,7 +41,6 @@ Transform natural language into calendar events instantly!
 - Location and notes
 - Smart reminders
 - Recurring events
-- Multiple attendees
 
 #### Power User Examples:
 ```
