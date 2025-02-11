@@ -3,7 +3,7 @@ from datetime import datetime
 from functools import lru_cache
 from textwrap import dedent
 
-from loguru import logger  # Import loguru logger
+from loguru import logger
 from mcp.server.fastmcp import FastMCP
 
 from .ical import CalendarManager
