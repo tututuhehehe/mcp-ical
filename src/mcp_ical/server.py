@@ -195,6 +195,18 @@ async def update_event(event_id: str, update_event_request: UpdateEventRequest) 
 
     except Exception as e:
         return f"Error updating event: {str(e)}"
+    
+@mcp.tool()
+async def get_current_datetime_info() -> str:
+    """Returns current date, time and weekday to help the model parse user's ambiguous time descriptions (like tomorrow, next week, etc.)."""
+    now = datetime.now()
+    weekdays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+    weekday_str = weekdays[now.weekday()]
+    return (
+        f"Current date: {now.strftime('%Y-%m-%d')}\n"
+        f"Current time: {now.strftime('%H:%M:%S')}\n"
+        f"Current weekday: {weekday_str}"
+    )
 
 
 def main():
